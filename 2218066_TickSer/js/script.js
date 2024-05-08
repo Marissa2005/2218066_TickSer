@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const card4 = document.getElementById("card4");
     const card5 = document.getElementById("card5");
     const card6 = document.getElementById("card6");
+    const carouselContainer = document.getElementById("carousel");
     //const getStartedBtn = document.getElementById("getStartedBtn");
     
     const images = [
@@ -32,6 +33,30 @@ document.addEventListener("DOMContentLoaded", function() {
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         showImage(currentIndex);
     }
+
+    function Functionindx() {
+        alert("Selamat Datang di TickSer");
+    }
+
+    function FunctionLog() {
+        let text = "";
+        let pil = confirm("apakah ini benar Anda ?");
+        if (pil == true) {
+          text = "Ya, Saya";
+        } else {
+          text = "Tidak bukan saya";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+
+    function FunctionReg() {
+        let person = prompt("Silahkan masukkan kode verivikasi ");
+        if (person != null) {
+          document.getElementById("demo").innerHTML = `Halo, selamat bergabung dengan TickSer`;
+        }
+    }
+
+
 
     // Tampilkan gambar pertama saat halaman dimuat
     showImage(currentIndex);

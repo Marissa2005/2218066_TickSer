@@ -6,6 +6,7 @@ body {
   header {
     background-color: #ffc0cb;
     padding: 20px;
+    
   }
   
   nav {
@@ -38,12 +39,81 @@ body {
 
   .cards-categories {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    overflow: hidden;
+    width: 550px;
+    border-radius:10px;
   }
+
+  .images img{
+    width: 100%;
+  }
+  .wrapper {
+    width: 550px;
+    margin:auto;
+    
+  }
+
+  #slide-1:target ~ .cards-categories{
+    margin-left: 0px;
+  }
+
+  #slide-2:target ~ .cards-categories{
+    margin-left: -1200px;
+  }
+
+  #slide-3:target ~ .cards-categories{
+    margin-left: -2400px;
+  }
+
+  #slide-4:target ~ .cards-categories{
+    margin-left: -3600px;
+  }
+
+  #slide-5:target ~ .cards-categories{
+    margin-left: -4800px;
+  }
+
+  #slide-6:target ~ .cards-categories{
+    margin-left: -6000px;
+  }
+
+  .navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #f4c1da;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+  }
+
+  .navigation a:hover{
+    background-color: #ff69b4;
+    transition: 1s;
+  }
+
+  .navigation{
+    margin-top: -50px;
+  }
+
   .card img {
     border-radius: 10px;
     margin-bottom: 20px;
+  }
+
+  .startbtn button{
+    width: 20%;
+    padding: 10px;
+    background-color: #eebfd5;
+    color: #120a0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .startbtn button:hover{
+    background-color: #ff1493;
   }
   
   .form-Signin {
@@ -82,19 +152,19 @@ body {
     background-color: #ff1493;
   }
 
-  .form-login {
+  .form-Reg {
     background-color: #ffc0cb;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.1);
   }
   
-  .form-login h3 {
+  .form-Reg h3 {
     text-align: center;
     margin-bottom: 20px;
   }
   
-  .form-login input {
+  .form-Reg input {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
@@ -103,7 +173,7 @@ body {
     font-size: 16px;
   }
   
-  .form-login button {
+  .form-Reg button {
     width: 100%;
     padding: 10px;
     background-color: #ff69b4;
@@ -114,7 +184,7 @@ body {
     font-size: 16px;
   }
   
-  .form-login button:hover {
+  .form-Reg button:hover {
     background-color: #ff1493;
   }
   
@@ -122,4 +192,5 @@ body {
     background-color: #ffc0cb;
     padding: 20px;
     text-align: center;
+    margin-top: 85px;
   }
