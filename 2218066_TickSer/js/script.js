@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentIndex = 0;
 
     function showImage(index) {
-        jumbotronImage.src = images[index];
+        jumbotronImage.src = images[i];
     }
 
     function nextImage() {
@@ -55,11 +55,12 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementById("demo").innerHTML = `Halo, selamat bergabung dengan TickSer`;
         }
     }
+});
 
 
 
     // Tampilkan gambar pertama saat halaman dimuat
-    showImage(currentIndex);
+    // showImage(currentIndex);
 
     // Tambahkan event listener untuk tombol "Get Started"
     //getStartedBtn.addEventListener("click", nextImage);
@@ -72,4 +73,35 @@ document.addEventListener("DOMContentLoaded", function() {
             prevImage();
         }
     });
-});
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const images = [
+//       "assets/I.jpg",
+//       "assets/J.jpg",
+//       "assets/K.png",
+//       "assets/L.png",
+//       "assets/M.png",
+//       "assets/N.png"
+//     ];
+
+//     let currentIndex = 0;
+//     const jumbotronImage = document.querySelector(".card1 img");
+
+//     function showImage(index) {
+//       jumbotronImage.src = images[index];
+//     }
+
+//     function nextImage() {
+//       currentIndex = (currentIndex + 1) % images.length;
+//       showImage(currentIndex);
+//     }
+
+//     function prevImage() {
+//       currentIndex = (currentIndex - 1 + images.length) % images.length;
+//       showImage(currentIndex);
+//     }
+
+//     showImage(currentIndex); // Show initial image
+//     // Now, you can call nextImage() and prevImage() as needed
+//   });

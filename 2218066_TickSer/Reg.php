@@ -23,19 +23,12 @@
 	<main>
 		<div class="form-Reg">
 		<h3>Sign Up</h3>
-		<input type="email" name="email" placeholder="Email" /> <br/> <br/>
-        <input type="text" name="username" placeholder="Username" /> <br/> <br/>
-	    <input type="password" name="password" placeholder="Password" /> <br/> <br/>
-		<button onclick="FunctionReg()">Register</button>
-		<p id="demo"></p>
-		<script>
-		  function FunctionReg() {
-			let person = prompt("Silahkan masukkan kode verivikasi ");
-			if (person != null) {
-			  document.getElementById("demo").innerHTML = `Halo, selamat bergabung dengan TickSer`;
-			}
-		  }
-		</script>
+		<form action="register-proses.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required /><br />
+                    <input type="text" name="username" placeholder="Username" required /><br />
+                    <input type="password" name="password" placeholder="Password" required /><br />
+                    <button type="submit" name="register">Register</button>
+        </form>		
 		</div>
 	</main>
 	<footer>
