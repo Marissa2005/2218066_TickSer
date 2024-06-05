@@ -1,10 +1,10 @@
 <?php 
-	session_start();
-	if($_SESSION['username'] == null) {
-		header('location:../Log.php');
-	}
+session_start();
+if ($_SESSION['username'] == null) {
+    header('Location: ../Log.php');
+    exit();
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -13,7 +13,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="../assets/C.png" />
     <link rel="stylesheet" href="../css/admin.css" />
-    <!-- Boxicons CDN Link -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TickSer Admin | Categories Entry</title>
@@ -64,15 +63,15 @@
         <div class="home-content">
             <h3>Masukan Data</h3>
             <div class="form-login">
-                <form action="">
+                <form action="categories-proses.php" method="post" enctype="multipart/form-data">
                     <label for="categories">Jenis Tiket</label>
-                    <input class="input" type="text" name="categories" id="categories" placeholder="categories" />
-                    <label for="categories">Harga</label>
-                    <input class="input" type="text" name="price" id="price" placeholder="price" />
-					<label for="deskripsi">Deskripsi</label>
-                    <input class="input" type="text" name="description" id="description" placeholder="description" />
+                    <input class="input" type="text" name="categories" id="categories" placeholder="categories" required />
+                    <label for="price">Harga</label>
+                    <input class="input" type="text" name="price" id="price" placeholder="price" required />
+					<label for="description">Deskripsi</label>
+                    <input class="input" type="text" name="description" id="description" placeholder="description" required />
                     <label for="photo">Foto</label>
-                    <input type="file" name="photo" id="photo" style="margin-bottom: 20px" /><br>
+                    <input type="file" name="photo" id="photo" style="margin-bottom: 20px" required /><br>
                     <button type="submit" class="btn btn-simpan" name="simpan" style="width: 10%">
                         Simpan
                     </button>

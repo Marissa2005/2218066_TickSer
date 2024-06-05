@@ -31,7 +31,7 @@
                 <form action="login-proses.php" method="post">
                     <input type="text" name="username" placeholder="Username" /> <br /> <br />
                     <input type="password" name="password" placeholder="Password" /> <br /> <br />
-                    <button onclick="FunctionLog()">Login</button>
+                    <button type="submit" name="login">Login</button>
                     <p id="demo"></p>
                     <script>
                     function FunctionLog() {

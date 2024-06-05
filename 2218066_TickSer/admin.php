@@ -3,6 +3,8 @@
 	if($_SESSION['username'] == null) {
 		header('location:Log.php');
 	}
+
+  
 ?>
 
 <!DOCTYPE html>
@@ -74,13 +76,34 @@
             <h1>Welcome Admin</h1> <br>
         </center>
         <center>
-            <img src="assets/J.jpg" alt="" width="350" height="175" />
-            <img src="assets/K.jpg" alt="" width="350" height="175" />
-            <img src="assets/L.jpg" alt="" width="350" height="175" />
-        </center>
-        <center>
-            <img src="assets/M.jpg" alt="" width="400" height="200" />
-            <img src="assets/N.jpg" alt="" width="400" height="200" />
+            <div class="widget">
+                <div class="widget-content">
+                    <h3>Total Categories</h3>
+                    
+                </div>
+            </div>
+            <style>
+            .widget {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 20px;
+                text-align: center;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin-bottom: 250px;
+            }
+
+            .widget-content h3 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .widget-content p {
+                font-size: 32px;
+                font-weight: bold;
+                color: #333;
+            }
+            </style>
         </center>
         <center>
             <img src="assets/P.png" alt="" width="400" height="200" />

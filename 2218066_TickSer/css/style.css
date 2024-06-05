@@ -39,6 +39,7 @@ body {
 
   .cards-categories {
     display: flex;
+    align-items: center;
     overflow: hidden;
     width: 550px;
     border-radius:10px;
