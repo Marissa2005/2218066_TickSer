@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f791b2;
+  }
+  
+  header {
+    background-color: #ffc0cb;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #0d0c0c;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #f0e8ed;
+  }
+  
+  .logo img {
+    width: 75px;
+    height: auto;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+
+
+  .cards-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .card img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-Signin {
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-Signin h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-Signin input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fba0ec;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  
+  .form-Signin button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #120a0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-Signin button:hover {
+    background-color: #ff1493;
+  }
+
+  .form-login {
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-login h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-login input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fba0ec;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+  
+  .form-login button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #120a0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-login button:hover {
+    background-color: #ff1493;
+  }
+  
+  footer {
+    background-color: #ffc0cb;
+    padding: 20px;
+    text-align: center;
+  }
